@@ -930,7 +930,7 @@ ohai "Downloading and installing Homebrew..."
   execute "${USABLE_GIT}" "fetch" "--force" "origin"
   execute "${USABLE_GIT}" "fetch" "--force" "--tags" "origin"
 
-  execute "${USABLE_GIT}" "reset" "--hard" "origin/master"
+  execute "${USABLE_GIT}" "reset" "--hard" "origin/stable"
 
   if [[ "${HOMEBREW_REPOSITORY}" != "${HOMEBREW_PREFIX}" ]]
   then
